@@ -1,0 +1,19 @@
+
+    [{
+        "ime": "Bojan",
+        "prezime": "Vasiljevic",
+        "godina": 4,
+        "smer": "SI"
+    },
+    {      
+        "ime": "Jaroslav",
+        "prezime": "Vanjo",
+        "godina": 2,
+        "smer": "SI"
+    },
+    {
+        "ime": "Martin",
+        "prezime": "Zvara",
+        "godina": 1,
+        "smer": "IT"
+    }]
