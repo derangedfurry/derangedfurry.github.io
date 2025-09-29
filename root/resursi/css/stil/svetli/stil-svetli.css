@@ -289,4 +289,12 @@ h3#css-naslov:hover {
 
 h3#js-naslov:hover {
   background-color: rgba(0, 0, 0, 0.22);
+}
+
+div.html-dugmad a {
+  background-color: rgb(228, 228, 228);
+}
+
+div.html-dugmad a:hover {
+  background-color: rgb(200, 200, 200);
 }/*# sourceMappingURL=stil-svetli.css.map */

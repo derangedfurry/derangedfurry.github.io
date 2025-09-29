@@ -378,3 +378,13 @@ h3#css-naslov:hover {
 h3#js-naslov:hover {
     background-color: rgba(0, 0, 0, 0.22);
 }
+
+div.html-dugmad a {
+   background-color: rgb(48, 10, 56);
+   color: whitesmoke;
+}
+
+div.html-dugmad a:hover {
+   background-color: whitesmoke;
+   color: rgb(48, 10, 56);
+}

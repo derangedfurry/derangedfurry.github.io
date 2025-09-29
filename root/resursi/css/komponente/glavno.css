@@ -32,6 +32,7 @@ main div.dugmad {
     padding-top: 15px;
 }
 
+
 main section button {
     padding: 23px;
     font-size: var(--velicina-fonta-glavni-dugme);
@@ -202,7 +203,7 @@ div.stranica div.primer {
 
 div.primer div.primer-unutra {
     min-width: 300px;
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 5px;
     width: max-content;
 }
@@ -220,7 +221,7 @@ div.html-dugmad {
     width: 100%;
 }
 
-div.html-dugmad button {
+div.html-dugmad a {
     padding: 20px;
     font-size: var(--velicina-fonta-kursevi-dugme);
     border-radius: 7px;
