@@ -248,7 +248,7 @@ function UcitajFont(){
 
 
 
-const link = document.getElementById("tema");
+const temaNaStranici = document.getElementById("tema");
 
 window.onload = function () {
     var tema = uzmiKolacic("tema");
@@ -256,24 +256,24 @@ window.onload = function () {
     console.log(tema);
 
     if(tema == null){
-        link.setAttribute("href", "../resursi/css/stil/svetli/stil-svetli.css");
+        temaNaStranici.setAttribute("href", "../resursi/css/stil/svetli/stil-svetli.css");
     }
     if(tema === "../resursi/css/stil/svetli/stil-svetli.css"){
-        link.setAttribute("href", "../resursi/css/stil/svetli/stil-svetli.css");
+        temaNaStranici.setAttribute("href", "../resursi/css/stil/svetli/stil-svetli.css");
     }
 
     if(tema === "../resursi/css/stil/tamni/stil-tamni.css"){
-        link.setAttribute("href", "../resursi/css/stil/tamni/stil-tamni.css");
+        temaNaStranici.setAttribute("href", "../resursi/css/stil/tamni/stil-tamni.css");
     }
 
 }
 
 function PromeniTemu(tema) {
 
-    const novaTema = link.getAttribute("href") === "../resursi/css/stil/tamni/stil-tamni.css" ? "../resursi/css/stil/svetli/stil-svetli.css" : "../resursi/css/stil/tamni/stil-tamni.css";
+    const novaTema = temaNaStranici.getAttribute("href") === "../resursi/css/stil/tamni/stil-tamni.css" ? "../resursi/css/stil/svetli/stil-svetli.css" : "../resursi/css/stil/tamni/stil-tamni.css";
     
     console.log("nova tema "+ novaTema);
-    link.setAttribute("href", novaTema);
+    temaNaStranici.setAttribute("href", novaTema);
     postaviKolacic("tema", novaTema, 30);
 
 }

@@ -40,8 +40,8 @@ function ucitajStranicu(stranica) {
 }
 
 console.log(stranice);
-stranice.forEach(link => {
-  link.addEventListener('click', dogadjaj => {
+stranice.forEach(dugme => {
+  dugme.addEventListener('click', dogadjaj => {
     dogadjaj.preventDefault();
     const stranica = dogadjaj.target.dataset.stranica;
     sessionStorage.setItem("stranica", stranica);
