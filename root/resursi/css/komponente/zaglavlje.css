@@ -1,0 +1,88 @@
+:root {
+    --velicina-zaglavlja: 80px;
+    --velicina-fonta-zaglavlja-gornji-deo: 1.4em;
+    --velicina-fonta-zaglavlja-donji-deo: 1.2em;
+    --velicina-fonta-zaglavlja-dugmad: 0.75em;
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    top:0px;
+    font-weight: 500;  
+}
+
+header div.glavni-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    
+}
+
+header div.glavni-nav div.nav-gornji-deo {
+    display: flex;
+    font-size: var(--velicina-fonta-zaglavlja-gornji-deo);
+    justify-content: space-between;
+}
+
+div.nav-gornji-deo nav {
+    display: flex;
+}
+
+div.nav-gornji-deo nav a {
+    display: flex;  
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+div.nav-gornji-deo nav a:hover {
+    animation: boja 0.1s forwards;
+}
+
+div.nav-donji-deo nav {
+    display: flex;
+    font-size: var(--velicina-fonta-zaglavlja-donji-deo);
+}
+
+div.nav-donji-deo nav a {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    cursor: pointer;
+}
+
+div.nav-donji-deo nav a:hover {
+    animation: boja 0.13s forwards;
+}
+
+header img {
+    width: calc( var(--velicina-zaglavlja) - 10px);
+    height: calc( var(--velicina-zaglavlja) - 10px);
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: content-box;
+}
+
+header div.zaglavlje-dugmad {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+div.zaglavlje-dugmad button {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.75em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+div.zaglavlje-dugmad button:hover {
+    transition: background-color 0.3s;
+}
+

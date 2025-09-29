@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Početna</title>
+    <link rel="stylesheet" type="text/css" href="../resursi/css/master.css">
+    <link rel="stylesheet" type="text/css" href="../resursi/css/stil/svetli/stil-svetli.css" id="tema">
+    <meta name="description" content="Sajt za učenje web programiranja sa besplatnim kursevima i primerima">
+    <meta name="keywords" content="HTML, CSS, JavaScript, web tutorijali, web programiranje">
+    <meta name="author" content="Nikola">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Sajt za učenje web programiranja">
+    <meta http-equiv="refresh" content="600">
+</head>                         
+<body>
+    <header id="burger-meni">
+       <img alt="burger-slika" id="glavni" src="../resursi/slike/burgermeni.png" onclick="PrikaziMeni()" loading="lazy">
+        <div class="sadrzaj" id="burgermeni">
+            <div class="burger-slika">
+                <a href="index.html"><img alt="logo" id="burger-logo" src="../resursi/slike/logo.png" loading="lazy"></a>
+            </div>
+            <div class="dugmad">
+                <button onclick="PrikaziKurseve()" id="dugme-kursevi">Kursevi</button>
+                <div class="kursevi" id="kursevi">
+                    <h3 id="html-naslov" onclick="PrikaziHTML()">HTML</h3>
+                    <div class="html" id="html-deo">
+                        <button><a href="../stranice/html.html" onclick="PostaviStranicu('uvod')">Uvod</a></button>
+                        <button><a href="../stranice/html.html" onclick="PostaviStranicu('semanticki')">Sem. El.</a></button>
+                        <button><a href="../stranice/html.html" onclick="PostaviStranicu('tekst')">Tekst</a></button>
+                        <button><a href="../stranice/html.html" onclick="PostaviStranicu('cssuhtml')">CSS u HTML</a></button>
+                        <button><a href="../stranice/html.html" onclick="PostaviStranicu('jsuhtml')">JS u HTML</a></button>
+                    </div>
+
+
+                    <h3 id="css-naslov" onclick="PrikaziCSS()">CSS</h3>
+                    <div class="css" id="css-deo">
+                        <button><a href="../stranice/css.html" onclick="PostaviStranicu('uvod')">Uvod</a></button>
+                        <button><a href="../stranice/css.html" onclick="PostaviStranicu('sintaksa')">Sintaksa</a></button>
+                        <button><a href="../stranice/css.html" onclick="PostaviStranicu('selektori')">Selektori</a></button>
+                    </div>
+
+
+                    <h3 id="js-naslov" onclick="PrikaziJS()">JAVASCRIPT</h3>
+                    <div class="javascript" id="js-deo">
+                        <button><a href="../stranice/javascript.html" onclick="PostaviStranicu('uvod')">Uvod</a></button>
+                        <button><a href="../stranice/javascript.html" onclick="PostaviStranicu('ifuslov')">If uslov</a></button>
+                        <button><a href="../stranice/javascript.html" onclick="PostaviStranicu('petlje')">Petlje</a></button>
+                    </div>
+
+                </div>
+                <button><a href="../stranice/onama.html">O nama</a></button>
+                <button><a href="../stranice/kontakt.html">Kontakt</a></button>
+                <div class="podesavanja">
+                    <button onclick="PovecajFont()">font +</button>
+                    <button onclick="SmanjiFont()">font -</button>
+                    <button onclick="PromeniTemu()">Tema</button>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <header id="meni">
+        <div class="glavni-nav">
+            
+            <div class="nav-gornji-deo">
+                <div style="display: inherit;">
+                    <div>
+                        <a href="index.html">
+                            <img width="60px" height="60px" alt="logo.png" src="../resursi/slike/logo.png" loading="lazy">
+                        </a>
+                    </div>
+                    <nav>
+                        <a onclick="MegaMeniKurs()">Kursevi</a>
+                        <a href="../stranice/onama.html">O nama</a>
+                        <a href="../stranice/kontakt.html">Kontakt</a>      
+                    </nav>
+                    <div class="megameni" id="MegaMeniKurs">
+                        <div class="minimeni">
+                            <a href="../stranice/html.html">
+                                <div class="naslov">
+                                    <h4>HTML</h4>
+                                </div>
+                            </a>
+                            <div class="menilista">
+                                <a href="../stranice/html.html" onclick="PostaviStranicu('uvod')">html uvod</a>
+                                <a href="../stranice/html.html" onclick="PostaviStranicu('semanticki')">html elementi</a>
+                                <a href="../stranice/html.html" onclick="PostaviStranicu('tekst')">html tekst</a>
+                                <a href="../stranice/html.html" onclick="PostaviStranicu('cssuhtml')">CSS u HTML-u</a>
+                                <a href="../stranice/html.html" onclick="PostaviStranicu('jsuhtml')">JS u HTML-u</a>
+                                                                                     
+                            </div>
+                        </div>
+
+                        <div class="minimeni">
+                            <a href="../stranice/css.html">
+                                <div class="naslov">
+                                    <h4>CSS</h4>
+                                </div>
+                            </a>
+                            <div class="menilista">
+                                <a href="../stranice/css.html" onclick="PostaviStranicu('uvod')">css uvod</a>
+                                <a href="../stranice/css.html" onclick="PostaviStranicu('sintaksa')">css sintaksa</a>
+                                <a href="../stranice/css.html" onclick="PostaviStranicu('selektori')">css selektori</a>
+                            </div>
+                        </div>
+
+                        <div class="minimeni">
+                            <a href="../stranice/javascript.html">
+                                <div class="naslov">
+                                    <h4>JAVASCRIPT</h4>
+                                </div>
+                            </a>
+                            <div class="menilista">
+                                <a href="../stranice/javascript.html" onclick="PostaviStranicu('uvod')">js uvod</a>
+                                <a href="../stranice/javascript.html" onclick="PostaviStranicu('ifuslov')">js if uslov</a>
+                                <a href="../stranice/javascript.html" onclick="PostaviStranicu('petlje')">js petlje</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="zaglavlje-dugmad">
+                    <button onclick="PovecajFont()">font+</button>
+                    <button onclick="SmanjiFont()">font-</button>
+                    <button onclick="PromeniTemu()">promeni temu</button>
+                </div>
+            </div>
+            <div class="nav-donji-deo">
+                <nav>
+                    <a href="../stranice/html.html">HTML</a>
+                    <a href="../stranice/css.html">CSS</a>
+                    <a href="../stranice/javascript.html">Javascript</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        
+        <div class="slike">
+            <div class="slika slika1 aktivna" id="slika1"></div>
+            <div class="slika slika2" id="slika2"></div>
+            <div class="slika slika3" id="slika3"></div>
+        </div>
+
+        <section class="dobrodosli" id="dobrodosli">
+            <div id="dobrodosli">
+                <h1>Dobrodošli!</h1>
+                <h2>Najbolji sajt za učenje web programiranja</h2>
+                <a href="#"><b>Niste sigurni gde da pocnete?</b></a>
+                <div class="dugmad">
+                    <button onclick="PrikaziKurseve()">Kursevi</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="html">
+            <div class="sadrzaj" id="html">
+                <div class="lista">
+                    <h1>HTML</h1>
+                    <h2>Programski Jezik za strukturu sajta</h2>
+                    <button ><a style="font-size: larger;" href="../stranice/html.html">Pogledaj</a></button>
+                </div>
+                <div class="kod-primer">
+                    <div class="kod-primer-spolja">
+                        <div class="kod-primer-unutra">
+                            <p class="boja1">&lt;DOCTYPE html&gt;</p>
+                            <p class="boja2">&lt;html&gt;</p>
+                            <p class="boja3">&lt;head&gt;</p>
+                            <p class="boja5">&lt;meta charset="UTF-8"&gt;</p>
+                            <p class="boja5">&lt;title&gt;moj sajt&lt;/title&gt;</p>
+                            <p class="boja3">&lt;/head&gt;</p>
+                            <p class="boja4">&lt;body&gt;</p>
+                            <p class="boja6">&lt;h1&gt;Naslov mog sajta&lt;/h1&gt;</p>
+                            <p class="boja6">&lt;p&gt;paragraf mog sajta&lt;/p&gt;</p>
+                            <p class="boja4">&lt;/body&gt;</p>
+                            <p class="boja2">&lt;/html&gt;</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section class="css">
+            <div class="sadrzaj" id="css">
+            <div class="lista">
+                <h1>CSS</h1>
+                <h2>Programski Jezik za stilizovanje sajta</h2>
+                <button><a style="font-size: larger;" href="../stranice/css.html">Pogledaj</a></button>
+            </div>
+                <div>
+                    <div class="kod-primer">
+                        <div class="kod-primer-spolja">
+                            <div class="kod-primer-unutra">
+                                <p class="boja7">main a {</p>
+                                <p class="boja8 tab">text-decoration: underline;</p>
+                                <p class="boja8 tab">font-size: 1em;</p>
+                                <p class="boja8 tab">color: darkblue;</p>
+                                <p class="boja7">}</p>
+                                <p class="boja7">.moja-klasa {</p>
+                                <p class="boja8 tab">display: flex;</p>
+                                <p class="boja8 tab">padding: 5px;</p>
+                                <p class="boja7">}</p>
+                                <p class="boja7">#slika {</p>
+                                <p class="boja8 tab">width: 50px;</p>
+                                <p class="boja8 tab">height: 50px;</p>
+                                <p class="boja7">}</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+        </section>
+
+        <section class="javascript">
+            <div class="sadrzaj" id="javascript">
+            <div class="lista">
+                <h1>JAVASCRIPT</h1>
+                <h2>Programski Jezik za programiranje sajta</h2>
+                <button><a style="font-size: larger;" href="../stranice/javascript.html">Pogledaj</a></button>
+            </div>
+                <div>
+                    <div class="kod-primer">
+                        <div class="kod-primer-spolja">
+                            <div class="kod-primer-unutra">
+                                <p><em class="boja2">function</em> <em class="boja6">SaberiDvaBroja(<em class="boja8">a,b</em>)</em> {</p>
+                                <br/>
+                                <p><em class="boja1">let </em><em class="boja8">suma</em> = <em class="boja8">0</em>;</p>
+                                <p><em class="boja8">suma</em> = <em class="boja8">a</em> + <em class="boja8">b</em>;</p>
+                                <br/>
+                                <p class="boja8"><em class="boja1">return</em> suma;</p>
+                                <p>}</p>
+                                <br/>
+                                <p><em class="boja1">let</em> <em class="boja8">telo</em> = <em class="boja8">document</em>.<em class="boja6">getElementById</em>(<em class="boja4">"telo"</em>);</p>
+                                <br/>
+                                <p><em class="boja2">function</em> <em class="boja6">PromeniBojuTela()</em> {</p>
+                                <br/>
+                                <p><em class="boja8">telo</em>.<em class="boja8">style</em>.<em class="boja8">backgroundColor</em> = <em class="boja4">"DarkBlue"</em>;</p>
+                                <p><em class="boja8">telo</em>.<em class="boja8">style</em>.<em class="boja8">fontSize</em> = <em class="boja8">5</em> + <em class="boja4">"px"</em>;</p>
+                                <br/>
+                                <p class="boja7">}</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div>  
+        </section>
+    </main>
+
+    <footer>   
+        <div class="sadrzaj" id="glavni">
+            <div class="lista">
+                <div class="naslov-liste">
+                    <h1>Kursevi</h1>
+                </div>
+                <div class="sadrzaj">
+                    <div class="lista">
+                        <div class="naslov-liste">
+                            <a href="../stranice/html.html"><h2>HTML</h2></a>
+                        </div> 
+                        <a href="../stranice/html.html" onclick="PostaviStranicu('uvod')">Uvod</a>
+                        <a href="../stranice/html.html" onclick="PostaviStranicu('semanticki')">Sem. El.</a>
+                        <a href="../stranice/html.html" onclick="PostaviStranicu('tekst')">Tekst</a>
+                        <a href="../stranice/html.html" onclick="PostaviStranicu('cssuhtml')">CSS u HTML</a>
+                        <a href="../stranice/html.html" onclick="PostaviStranicu('jsuhtml')">JS u HTML</a>
+                    </div>
+                    <div class="lista">
+                        <div class="naslov-liste">
+                            <a href="../stranice/css.html"><h2>CSS</h2></a>
+                        </div> 
+                        <a href="../stranice/css.html" onclick="PostaviStranicu('uvod')">Uvod</a>
+                        <a href="../stranice/css.html" onclick="PostaviStranicu('sintaksa')">Sintaksa</a>
+                        <a href="../stranice/css.html" onclick="PostaviStranicu('selektori')">Selektori</a>
+                    </div>
+                    <div class="lista">
+                        <div class="naslov-liste">
+                            <a href="../stranice/javascript.html"><h2>JAVASCRIPT</h2></a>
+                        </div> 
+                        <a href="../stranice/javascript.html" onclick="PostaviStranicu('uvod')">Uvod</a>
+                        <a href="../stranice/javascript.html" onclick="PostaviStranicu('ifuslov')">if uslov</a>
+                        <a href="../stranice/javascript.html" onclick="PostaviStranicu('petlje')">petlje</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="sadrzaj">           
+            <a href="../stranice/onama.html"><h1>O nama</h1></a>
+        </div>
+         <div class="sadrzaj">
+            <a href="../stranice/kontakt.html"><h1>Kontakt</h1></a>         
+        </div>
+    </footer>
+    
+</body>
+<script src="../resursi/javascript/master.js"></script>
+<script src="../resursi/javascript/promeniSliku.js"></script>
+</html>

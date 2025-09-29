@@ -1,0 +1,186 @@
+
+/* 1100px
+750px*/
+
+@media screen and (max-width: 1100px) {
+    
+        header#burger-meni {
+        display: none;
+    }
+
+/*footer*/
+
+
+
+footer div.sadrzaj h1 {
+    font-size: calc( var(--velicina-font-podnozje-sadrzaj-h1) - 0.4em);
+}
+ 
+footer div.sadrzaj h2 {
+    font-size: calc( var(--velicina-font-podnozje-sadrzaj-h2) - 0.4em);
+}
+
+
+
+
+
+/*header*/
+header div.glavni-nav div.nav-gornji-deo {
+    font-size: calc( var(--velicina-fonta-zaglavlja-gornji-deo) - 0.2em);
+}
+
+div.nav-donji-deo nav {
+    font-size: calc( var(--velicina-fonta-zaglavlja-donji-deo) - 0.2em);
+}
+
+/*megameni*/
+
+@keyframes napred {
+    
+  from 
+  {
+    top: 100px;
+    opacity: 0%;
+    }
+    
+  to 
+  {
+    top: 79px;
+    opacity: 100%;
+  }
+
+}
+
+@keyframes nazad {
+  from 
+  { 
+    top: 79px;
+    }
+
+  to {
+    top: 100px;
+    opacity: 0%;
+    display: none;
+    }
+}
+
+
+/*main*/
+
+main section button {
+    font-size: calc( var(--velicina-fonta-glavni-dugme) - 0.2em);
+    padding: 15px;
+}
+
+main section.dobrodosli {
+    padding: 0;
+}
+
+div#dobrodosli {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+div#html, div#css, div#javascript {
+    flex-direction: column;
+    align-items: center;
+}
+
+main section div.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: calc( var(--velicina-fonta-glavni-h1) - 0.4em);
+    padding-bottom: 15px;
+}
+
+main h2 {
+    font-size: calc( var(--velicina-fonta-glavni-h2) - 0.4em);
+}
+
+main a {
+    font-size: calc( var(--velicina-fonta-glavni-a) - 0.4em);
+}
+
+div.stranica div.stranica-naslov h1 {
+    font-size: calc( var(--velicina-fonta-kursevi-h1) - 1.5em);
+}
+
+div.stranica h2 {
+    font-size: calc( var(--velicina-fonta-kursevi-h2) - 0.1em);
+}
+
+div.stranica p {
+    font-size: calc( var(--velicina-fonta-kursevi-p) - 0em);
+}
+
+div.html-dugmad button {
+    font-size: calc( var(--velicina-fonta-kursevi-dugme) - 0em);
+}
+
+div.o-nama-naslov h1 {
+    font-size: calc( var(--velicina-fonta-o-nama-kontakt-h1) - 2em);
+}
+
+div.o-nama-tekst p {
+    font-size: calc( var(--velicina-fonta-o-nama-kontakt-p) - 0.2em);
+}
+
+div.kontakt-naslov h1 {
+    font-size: calc( var(--velicina-fonta-o-nama-kontakt-h1) - 2em);
+}
+
+form label {
+    font-size: calc( var(--velicina-fonta-forma-labela) - 0.1em);
+}
+
+form input {
+    font-size: calc( var(--velicina-fonta-forma-unos) - 0.1em);
+}
+
+form textarea {
+    font-size: calc( var(--velicina-fonta-forma-tekst) - 0.05em);
+}
+
+div.primer div.primer-unutra {
+    max-width: 600px;
+}
+
+aside {
+    min-width: 200px;
+}
+
+
+aside button {
+
+    font-size: calc( var(--velicina-font-odeljak-dugme) - 0.2em);
+
+}
+
+aside h1 {
+    font-size: calc( var(--velicina-font-odeljak-h1) - 0.3em);
+}
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    header#meni {
+        display: none;
+    }
+
+    header#burger-meni {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

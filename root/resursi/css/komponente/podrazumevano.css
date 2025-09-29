@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Roboto;
+    letter-spacing: 2px;
+    word-break: keep-all;
+}
+
+
+
+
+

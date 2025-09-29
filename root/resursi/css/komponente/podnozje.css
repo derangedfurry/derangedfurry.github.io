@@ -1,0 +1,60 @@
+:root {
+    --velicina-font-podnozje-dugme: 1.3em;
+    --velicina-font-podnozje-h1: 3em;
+    --velicina-font-podnozje-a: 2em;
+    --velicina-font-podnozje-sadrzaj-h1: 3em;
+    --velicina-font-podnozje-sadrzaj-h2: 2em;
+    --velicina-font-podnozje-sadrzaj-a: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 5px solid;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+footer h1 {
+    font-size: var(--velicina-font-podnozje-h1);
+}
+
+footer a {
+    font-size: var(--velicina-font-podnozje-a);
+}
+
+footer div.sadrzaj {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer div.sadrzaj h1 {
+    font-size: var(--velicina-font-podnozje-sadrzaj-h1);
+}
+ 
+footer div.sadrzaj h2 {
+    font-size: var(--velicina-font-podnozje-sadrzaj-h2);
+}
+
+footer div.sadrzaj a {
+    font-size: var(--velicina-font-podnozje-sadrzaj-a);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer div.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.naslov-liste {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}

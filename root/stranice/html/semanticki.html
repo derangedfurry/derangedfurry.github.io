@@ -1,0 +1,213 @@
+
+
+<div class="stranica">
+
+    <div class="stranica-naslov">
+        <h1>Semantički HTML</h1>
+    </div>
+    <div class="stranica-sadrzaj">
+
+
+        <h2>Semantički elementi</h2>
+        <p>Semantički elementi = elementi sa značenjem.</p>
+        <br/>
+        <p>Semantički element jasno opisuje svoje značenje i pretraživaču i programeru.</p>
+        <br/>
+        <p>Najčešće korišćeni sematnički elementi:</p>
+
+        
+
+        
+        <hr class="razmak" id="sekcija"/>
+        
+
+
+
+        <h2>&lt;section&gt;</h2>
+        <p><em>&lt;section&gt;</em> element definiše sekciju u dokumentu.</p>
+        <br/>
+        
+        <p>Sekcija je tematsko grupisanje sadržaja, obično sa naslovom</p>
+        <br/>
+        
+        <p>Primer sekcije:</p>
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;section&gt;</p>
+                <p>&lt;h2&gt;Google Chrome&lt;/h2&gt;</p>
+                <p>&lt;p&gt;Google Chrome je veb pretraživač koji je razvio Google, objavljen 2008. Chrome je danas najpopularniji veb pretraživač na svetu!&lt;/p&gt;</p>
+
+                <p>&lt;/section&gt;</p>
+            </div>
+        </div>
+
+
+
+
+        <hr class="razmak" id="artikal"/>
+
+
+
+
+            <h2>&lt;article&gt;</h2>
+            <p><em>&lt;article&gt;</em> specificira nezavisan, samostalan sadržaj.</p>
+            <br/>
+            <p>Artikal treba da ima smisla sam po sebi, i trebalo bi da bude moguće distribuirati ga nezavisno od ostatka veb stranice.</p>
+            <br/>
+        <p>Primer Artikla:</p>
+            <div class="primer">
+                <div class="primer-unutra">
+                    <p>&lt;article&gt;</p>
+                    <p>&lt;h2&gt;Mozilla Firefox&lt;/h2&gt;</p>
+                    <p>&lt;p&gt;Mozilla Firefox je veb pretraživač otvorenog koda koji je razvila Mozilla.&lt;/p&gt;</p>
+
+                    <p>&lt;/article&gt;</p>
+                </div>
+            </div>
+
+
+
+
+        <hr class="razmak" id="zaglavlje"/>
+
+
+
+
+        <h2>&lt;header&gt;</h2>
+        <p>Element <em>&lt;header&gt;</em> predstavlja kontejner za uvodni sadržaj ili skup navigacionih veza.</p>
+        
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;header&gt;</p>
+                <br/>
+                <p>&lt;h1&gt;novi naslov&lt;/h1&gt;</p>
+                <p>&lt;p&gt;novi paragraf&lt;/p&gt;</p>
+                <p>&lt;nav&gt;</p>
+                <p>&lt;a href="index.html"&gt;link1&lt;/a&gt;</p>
+                <p>&lt;a href="css.html"&gt;link2&lt;/a&gt;</p>
+                <p>&lt;a href="javascript.html"&gt;link3&lt;/a&gt;</p>
+                <p>&lt;a href="#"&gt;link4&lt;/a&gt;</p>
+                <p>&lt;/nav&gt;</p>
+                <br/>
+                <p>&lt;/header&gt;</p>
+            </div>
+        </div>    
+
+
+
+
+        <hr class="razmak" id="nav"/>
+
+
+
+
+        <h2>&lt;nav&gt;</h2>
+        <p>Element <em>&lt;nav&gt;</em> definiše skup veza za navigaciju.</p>    
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;nav&gt;</p>
+                <p>&lt;a href="index.html"&gt;link1&lt;/a&gt;</p>
+                <p>&lt;a href="css.html"&gt;link2&lt;/a&gt;</p>
+                <p>&lt;a href="javascript.html"&gt;link3&lt;/a&gt;</p>
+                <p>&lt;a href="#"&gt;link4&lt;/a&gt;</p>
+                <p>&lt;/nav&gt;</p>
+            </div>
+        </div>
+
+
+
+
+        <hr class="razmak" id="odeljak"/>
+
+
+
+
+        <h2>&lt;aside&gt;</h2>
+        <p>Element &lt;aside&gt; definiše neki sadržaj osim sadržaja u koji je smešten (poput bočne trake).</p>
+        <br/>
+        <p>Sadržaj &lt;aside&gt; treba da bude indirektno povezan sa okolnim sadržajem.</p>
+        <br/>
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;h2&gt;Google Chrome&lt;/h2&gt;</p>
+                <p>&lt;p&gt;Google Chrome je veb pretraživač koji je razvio Google, objavljen 2008. Chrome je danas najpopularniji veb pretraživač na svetu!&lt;/p&gt;</p>
+
+                <br/>
+
+                <p>&lt;aside&gt;</p>
+                <p>&lt;h3&gt;Web Pretraživač&lt;h3&gt;</p>
+                <p>&lt;p&gt;Web pretraživač je softverska aplikacija koja služi za pristup informacijama na WWW (world wide web).&lt;/p&gt;</p>
+                <p>&lt;/aside&gt;</p>
+
+            </div>
+        </div>
+
+
+
+        <hr class="razmak" id="glavno"/>
+
+
+
+
+        <h2>&lt;main&gt;</h2>
+        <p>Element &lt;main&gt; specificira glavni sadržaj dokumenta.</p>
+        <br/>
+        <p>Sadržaj unutar &lt;main&gt; elementa treba da bude jedinstven za dokument. 
+            Ne bi trebalo da sadrži sadržaj koji se ponavlja u dokumentima kao što su bočne trake, 
+            veze za navigaciju, informacije o autorskim pravima i logo sajtova.</p>
+        <br/>
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;main&gt;</p>
+                <br/>
+                <p>&lt;section&gt;</p>
+                <p>&lt;h2&gt;Google Chrome&lt;/h2&gt;</p>
+                <p>&lt;p&gt;Google Chrome je veb pretraživač koji je razvio Google, objavljen 2008. Chrome je danas najpopularniji veb pretraživač na svetu!&lt;/p&gt;</p>
+
+                <p>&lt;/section&gt;</p>
+
+                <br/>
+
+                <p>&lt;article&gt;</p>
+                <p>&lt;h2&gt;Mozilla Firefox&lt;/h2&gt;</p>
+                <p>&lt;p&gt;Mozilla Firefox je veb pretraživač otvorenog koda koji je razvila Mozilla.&lt;/p&gt;</p>
+                <p>&lt;/article&gt;</p>
+
+                <br/>
+
+                <p>&lt;aside&gt;</p>
+                <p>&lt;h3&gt;Web Pretraživač&lt;h3&gt;</p>
+                <p>&lt;p&gt;Web pretraživač je softverska aplikacija koja služi za pristup informacijama na WWW (world wide web).&lt;/p&gt;</p>
+                <p>&lt;/aside&gt;</p>
+                <br/>
+                <p>&lt;/main&gt;</p>
+            </div>
+        </div>
+
+
+
+        <hr class="razmak" id="podnozje"/>
+
+
+
+
+        <h2>&lt;footer&gt;</h2>
+        <p>Element <em>&lt;footer&gt;</em> definiše podnožje za dokument ili sekciju.</p>
+        <br/>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;footer&gt;</p>
+                <p>&lt;p&gt;Author: Ime Prezime&lt;/p&gt;</p>
+                <p>&lt;p&gt;Email: PrimerMejl@gmail.com&lt;/p&gt;</p>
+                <p>&lt;/footer&gt;</p>
+            </div>
+        </div>
+
+        <div class="html-dugmad">
+            <button>Početna</button>
+            <button>Elementi</button>
+        </div>
+    </div>
+</div>
+

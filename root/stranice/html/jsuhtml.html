@@ -1,0 +1,98 @@
+<div class="stranica">
+    <div class="stranica-naslov">
+        <h1>JavaScript u HTML-u</h1>
+    </div>
+    <div class="stranica-sadrzaj">
+        
+        <h2>JavaScript</h2>
+        
+        <p>JavaScript služi za uvođenje dinamičkih i interaktivnih elemenata u HTML.</p>
+        <br/>
+        <p>oznaka &lt;script&gt; se koristi za definisanje JavaScript skripte.</p>
+        <br/>
+        <p>Uobičajena upotreba JavaScript-a su manipulacija slikama, 
+            validacija forme i dinamičke promene sadržaja.</p>
+        <br/>
+        <p>Da bi izabrao HTML element, 
+            JavaScript najčešće koristi metodu document.getElementById().</p>
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <br/>
+                <p>&lt;link href="stil.css"&gt;</p>
+                <br/>
+                <p>&lt;/head&gt;</p>
+                <br/>
+                <p>&lt;body&gt;</p>
+                <br/>
+                <p>&lt;h1&gt;Naslov&lt;/h1&gt;</p>
+                <br/>
+                <p>&lt;p id="paragraf"&gt;Paragraf&lt;/p&gt;</p>
+                <p>&lt;button onclick="Funkcija()"&gt;Klikni me&lt;/button&gt;</p>
+                <br/>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;script&gt;</p>
+                <p>function Funkcija() {</p>
+                <p>document.getElementById("paragraf").style.fontSize = "25px"; </p>
+                <p>document.getElementById("paragraf").style.color = "red";</p>
+                <p>document.getElementById("paragraf").style.backgroundColor = "yellow";     </p>   
+                <p>}</p>
+                <p>&lt;/script&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+        <p id="paragraf">Paragraf</p>
+        <button onclick="Funkcija()" style="padding: 10px; background-color: lightgray; border: none;">Klikni me</button>
+        
+
+
+
+
+        <hr class="razmak"/>
+
+
+
+
+        <h2>Ekstreni JavaScript</h2>
+        <p>Ekstreni JavaScript podrazumeva korišćenje <em>src</em> atributa kod <em>&lt;script&gt;</em> elementa.</p>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;script src="Skripta.js"&gt;</p>
+                <p>&lt;/script&gt;</p>
+
+            </div>
+        </div>
+
+
+        <hr class="razmak"/>
+
+
+
+
+        <h2>&lt;Noscript&gt;</h2>
+        <p>U slučaju da pretraživač ne podržava skripte ili su skripe onsesposobljene, prikazuje se alternativni
+            sadržaj.
+        </p>
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;script src="Skripta.js"&gt;</p>
+                <p>&lt;/script&gt;</p>
+                <p>&lt;Noscript&gt;</p>
+                <p>Vaš pretraživač ne podržava Javascript!</p>
+                <p>&lt;/Noscript&gt;</p>
+            </div>
+        </div>
+
+
+
+        <div class="html-dugmad">
+            <button>CSS u HTML-u</button>
+        </div>
+
+
+    </div>
+</div>
+

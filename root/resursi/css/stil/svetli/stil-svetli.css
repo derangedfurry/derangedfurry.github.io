@@ -1,0 +1,292 @@
+header div.nav-gornji-deo {
+  background-color: rgb(222, 222, 222);
+}
+
+header div.nav-gornji-deo a {
+  color: rgb(35, 35, 35);
+}
+
+header div.nav-donji-deo {
+  background-color: rgb(35, 35, 35);
+}
+
+header div.nav-donji-deo a {
+  color: rgb(219, 219, 219);
+  background-image: url();
+}
+
+div.zaglavlje-dugmad button {
+  color: rgb(35, 35, 35);
+  background-color: rgb(200, 200, 200);
+}
+
+div.zaglavlje-dugmad button:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+@keyframes boja {
+  from {
+    background-color: inherit;
+  }
+  to {
+    background-color: rgb(192, 192, 192);
+  }
+}
+section.dobrodosli {
+  background-color: rgba(255, 170, 25, 0.9);
+  color: rgb(15, 15, 15);
+}
+
+section.html {
+  background-color: rgb(255, 210, 25);
+  color: rgb(15, 15, 15);
+}
+
+section.css {
+  background-color: rgb(255, 190, 25);
+  color: rgb(15, 15, 15);
+}
+
+section.javascript {
+  background-color: rgb(255, 210, 25);
+  color: rgb(15, 15, 15);
+}
+
+main section.dobrodosli a {
+  color: rgb(121, 90, 21);
+}
+
+main section.dobrodosli a:hover {
+  color: rgb(65, 47, 8);
+}
+
+div.kod-primer-spolja {
+  background-color: white;
+}
+
+div.kod-primer-unutra {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+
+div.kod-primer-unutra p.boja1 {
+  color: rgb(100, 100, 255);
+}
+
+div.kod-primer-unutra p.boja2 {
+  color: rgb(150, 150, 255);
+}
+
+div.kod-primer-unutra p.boja3 {
+  color: rgb(84, 255, 110);
+}
+
+div.kod-primer-unutra p.boja4 {
+  color: rgb(255, 171, 36);
+}
+
+div.kod-primer-unutra p.boja5 {
+  color: rgb(174, 255, 61);
+}
+
+div.kod-primer-unutra p.boja6 {
+  color: rgb(255, 226, 36);
+}
+
+div.kod-primer-unutra p.boja7 {
+  color: rgb(255, 204, 74);
+}
+
+div.kod-primer-unutra p.boja8 {
+  color: rgb(28, 164, 213);
+}
+
+div.kod-primer-unutra em.boja1 {
+  color: rgb(100, 100, 255);
+}
+
+div.kod-primer-unutra em.boja2 {
+  color: rgb(150, 150, 255);
+}
+
+div.kod-primer-unutra em.boja3 {
+  color: rgb(84, 255, 110);
+}
+
+div.kod-primer-unutra em.boja4 {
+  color: rgb(255, 171, 36);
+}
+
+div.kod-primer-unutra em.boja5 {
+  color: rgb(174, 255, 61);
+}
+
+div.kod-primer-unutra em.boja6 {
+  color: rgb(255, 226, 36);
+}
+
+div.kod-primer-unutra em.boja7 {
+  color: rgb(255, 204, 74);
+}
+
+div.kod-primer-unutra em.boja8 {
+  color: rgb(28, 164, 213);
+}
+
+div.stranica div.stranica-naslov {
+  background-color: rgb(255, 236, 160);
+}
+
+div.stranica div.stranica-naslov h1 {
+  background-color: rgb(255, 229, 124);
+}
+
+div.stranica div.primer {
+  background-color: rgb(51, 51, 51);
+  color: whitesmoke;
+}
+
+div.primer div.primer-unutra {
+  background-color: rgb(33, 33, 33);
+}
+
+div.o-nama-naslov, div.kontakt-naslov {
+  background-color: rgb(255, 211, 90);
+}
+
+div.o-nama-tekst, div.kontakt-forma {
+  background-color: rgb(255, 226, 146);
+}
+
+footer {
+  background-color: rgb(35, 35, 35);
+  color: rgb(15, 15, 15);
+  border-color: rgb(236, 236, 236);
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 8, 74);
+}
+
+button:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+footer h1 {
+  color: white;
+}
+
+footer a {
+  color: rgb(231, 231, 231);
+}
+
+footer a:hover {
+  color: rgb(218, 218, 218);
+}
+
+aside button {
+  background-color: rgb(222, 222, 222);
+}
+
+aside h1 {
+  background-color: rgb(222, 222, 222);
+}
+
+div.pod-dugmad a {
+  color: rgb(13, 8, 74);
+  background-color: rgb(206, 206, 206);
+}
+
+div.pod-dugmad a:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.minimeni {
+  background-color: rgb(213, 135, 0);
+}
+
+div.naslov {
+  background-color: rgb(226, 226, 226);
+  border-left: 2px solid rgb(200, 200, 200);
+  border-right: 2px solid rgb(200, 200, 200);
+}
+
+div.naslov:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+div.menilista {
+  border: 2px solid rgb(193, 119, 0);
+}
+
+div.menilista a:hover {
+  background-color: rgb(193, 119, 0);
+}
+
+img#glavni {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header#burger-meni div.sadrzaj {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+header#burger-meni div.sadrzaj button {
+  background-color: rgba(0, 0, 0, 0.38);
+  color: white;
+}
+
+div.dugmad div.html button {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: white;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+div.dugmad div.css button {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: white;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+div.dugmad button a {
+  color: white;
+}
+
+div.dugmad div.javascript button {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: white;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+div.dugmad div.html button:hover {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+
+div.dugmad div.css button:hover {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+
+div.dugmad div.javascript button:hover {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+
+header#burger-meni div.dugmad button:hover {
+  background-color: rgba(0, 0, 0, 0.58);
+}
+
+h3#html-naslov, h3#css-naslov, h3#js-naslov {
+  text-shadow: 5px 3px 1px rgba(0, 0, 0, 0.28);
+}
+
+h3#html-naslov:hover {
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+h3#css-naslov:hover {
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+h3#js-naslov:hover {
+  background-color: rgba(0, 0, 0, 0.22);
+}/*# sourceMappingURL=stil-svetli.css.map */

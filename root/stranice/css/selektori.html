@@ -1,0 +1,159 @@
+<div class="stranica">
+
+    <div class="stranica-naslov" id="naslov">
+        <h1>CSS selektori</h1>
+    </div>
+    <div class="stranica-sadrzaj">
+
+        <h2>Selektori</h2>
+
+        <p>CSS selektori se koriste za „pronalaženje“ (ili odabir) HTML elemenata koji će se stilizovati.</p>
+        <br/>
+
+        <p>CSS selektori se mogu podeliti u pet kategorija:</p>
+
+        <ul class="lista">
+            <li><p>Jednostavni selektori (odabir elemenata na osnovu imena, ID-a, klase)</p></li>
+            <li><p>Kombinatorni selektori (odabir elemenata na osnovu specifičnog odnosa između njih)</p></li>
+            <li><p>Selektori pseudoklasa (odabir elemenata na osnovu određenog stanja)</p></li>
+            <li><p>Selektori pseudoelemenata (odaberite i stilizujte deo elementa)</p></li>
+            <li><p>Selektori atributa (odabir elemenata na osnovu atributa ili vrednosti atributa)</p></li>
+        </ul>
+
+        <p><b>Najčešće korišćeni selektori su selektori id, klase i univerzalni selektor</b></p>
+
+
+
+
+        <hr class="razmak"/>
+
+
+
+        <h2>ID selektor</h2>
+
+        <p>ID selektor koristi atribut id HTML elementa da bi izabrao određeni element.</p>
+        <br>
+
+        <p>ID elementa je jedinstven unutar stranice, tako da se id selektor koristi za odabir jednog jedinstvenog elementa.</p>
+        <br>
+
+        <p>Da bi se selektovao specifični id, koristi se <em>#</em> karakter, praćen id-jem elementa.</p>
+
+        <div class="primer">
+            <div class="primer-unutra">      
+            <p><em>#id-elementa</em> {</p>
+            <p><em>osobina </em>:<em> vrednost</em> ;</p>
+            <p>...</p>
+            <p>}</p>
+            </div>
+        </div>
+
+
+
+        <hr class="razmak"/>
+
+
+
+        <h2>Selektor klase</h2>
+
+        <p>Selektor klase bira HTML elemente sa određenim atributom klase.</p>
+        <br/>
+
+        <p>Da bi se selektovala specifična klasa koristi se <em>.</em> karakter, praćen imenom klase.</p>
+
+        <div class="primer">
+            <div class="primer-unutra">      
+            <p><em>.ime-klase</em> {</p>
+            <p><em>osobina </em>:<em> vrednost</em> ;</p>
+            <p>...</p>
+            <p>}</p>
+            </div>
+        </div>
+
+        <p>Moguće je odrediti na koje elemente sa tom klasom će uticati izmene.</p>
+
+        <div class="primer">
+            <div class="primer-unutra">      
+            <p><em>p.ime-klase</em> {</p>
+            <p><em>osobina </em>:<em> vrednost</em> ;</p>
+            <p>...</p>
+            <p>}</p>
+            </div>
+        </div>
+
+
+
+        <hr class="razmak"/>
+
+
+
+
+        <h2>Univerzalni selektor</h2>
+
+        <p>Univerzalni selektor koji koristi <em>*</em> karakter, uzima sve HTML elemente na stranici u obzir.</p>
+
+        <div class="primer">
+            <div class="primer-unutra">      
+            <p><em>*</em> {</p>
+            <p><em>osobina </em>:<em> vrednost</em> ;</p>
+            <p>...</p>
+            <p>}</p>
+            </div>
+        </div>
+
+
+
+        <hr class="razmak"/>
+
+
+
+        <h2>Selektor grupisanja</h2>
+
+        <p>Selektor grupisanja bira sve HTML elemente sa istim definicijama stila.</p>
+
+        <div class="primer">
+            <div class="primer-unutra">      
+            <p><em>h1</em> {</p>
+            <p><em>color </em>:<em> red</em> ;</p>
+            <p><em>font-family </em>:<em> Roboto</em> ;</p>
+            <p>}</p>
+            <p></p>
+            <p><em>p</em> {</p>
+            <p><em>color </em>:<em> red</em> ;</p>
+            <p><em>font-family </em>:<em> Roboto</em> ;</p>
+            <p>}</p>
+            <p></p>
+            <p><em>a</em> {</p>
+            <p><em>color </em>:<em> red</em> ;</p>
+            <p><em>font-family </em>:<em> Roboto</em> ;</p>
+            <p>}</p>
+            </div>
+        </div>
+
+        <p>U primeru se mogu primetiti da elementi imaju 
+            identične definicije stila</p>
+        <br/>
+        <p>Selektor grupisanja se može primeniti pri minimiziranju
+            količine koda, primenom ( <em>,</em> ) između elemenata.
+        </p>
+
+        <div class="primer">
+            <div class="primer-unutra">      
+            <p><em>h1, p, a</em> {</p>
+            <p><em>color </em>:<em> red</em> ;</p>
+            <p><em>font-family </em>:<em> Roboto</em> ;</p>
+            <p>}</p>
+            </div>
+        </div>
+
+
+
+        <div class="html-dugmad">
+            <button>CSS osnove</button>
+            <button>Početna</button>
+        </div>
+
+
+
+    </div>
+</div>

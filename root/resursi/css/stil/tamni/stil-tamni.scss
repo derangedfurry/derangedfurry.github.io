@@ -1,0 +1,380 @@
+// zaglavlje
+
+$nav-gornji-pozadina-boja: rgb(35, 35, 35);
+$a-boja-1: rgb(222, 222, 222);
+$a-boja-2: rgb(219, 219, 219);
+$nav-donji-pozadina-boja: rgb(54, 54, 54);
+
+header div.nav-gornji-deo {
+    background-color: $nav-gornji-pozadina-boja;
+}
+
+header div.nav-gornji-deo a {
+    color: $a-boja-1;
+}
+
+header div.nav-gornji-deo nav a:hover {
+    background-color: rgb(212, 212, 212);
+    color: rgb(31, 4, 45);
+}
+
+
+
+header div.nav-donji-deo {
+    background-color: $nav-donji-pozadina-boja;
+}
+
+header div.nav-donji-deo a {
+    color: $a-boja-2;
+    
+}
+
+header div.nav-donji-deo a:hover {
+    background-color: rgb(212, 212, 212);
+    color: rgb(31, 4, 45);;
+}
+
+header#meni img {
+    filter: invert(1);
+}
+
+header#burger-meni img {
+    filter: invert(1);
+}
+
+div.zaglavlje-dugmad button {
+    color: rgb(241, 241, 241);
+    background-color: rgb(11, 11, 11);
+}
+
+div.zaglavlje-dugmad button:hover {
+    background-color: rgb(180, 180, 180);
+    color: rgb(35, 35, 35);
+}
+
+@keyframes boja {
+  from {background-color: inherit;}
+  to {background-color: rgb(192, 192, 192);}
+}
+
+//glavno
+
+$glavno-boja-1: rgba(19, 1, 28, 0.95);
+$glavno-boja-2: rgba(33, 5, 46, 0.95);
+$glavno-boja-3: rgba(19, 1, 28, 0.95);
+$text-boja: rgb(233, 233, 233);
+
+section.dobrodosli {
+    background-color: $glavno-boja-1;
+    color: $text-boja;
+}
+
+section.html {
+    background-color: $glavno-boja-2;
+    color: $text-boja;
+}
+
+section.css {
+    background-color: $glavno-boja-3;
+    color: $text-boja;
+}
+
+section.javascript {
+    background-color: $glavno-boja-2;
+    color: $text-boja;
+}
+
+main section.dobrodosli a{
+    color: rgb(73, 76, 145);
+}
+
+main section.dobrodosli a:hover {
+    color: rgb(99, 102, 200);
+}
+
+main section button a {
+    color: whitesmoke;
+}
+
+// primer koda u glavnom delu
+
+
+div.kod-primer-spolja {
+    background-color: white;
+}
+
+div.kod-primer-unutra {
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+
+div.kod-primer-unutra p.boja1 {
+    color: rgb(100, 100, 255);
+}
+div.kod-primer-unutra p.boja2 {
+    color: rgb(150, 150, 255);
+}
+div.kod-primer-unutra p.boja3 {
+    color: rgb(84, 255, 110);
+}
+div.kod-primer-unutra p.boja4 {
+    color: rgb(255, 171, 36);
+}
+div.kod-primer-unutra p.boja5 {
+    color: rgb(174, 255, 61);
+}
+div.kod-primer-unutra p.boja6 {
+    color: rgb(255, 226, 36);
+}
+div.kod-primer-unutra p.boja7 {
+    color: rgb(255, 204, 74);
+}
+div.kod-primer-unutra p.boja8 {
+    color: rgb(28, 164, 213);
+}
+
+div.kod-primer-unutra em.boja1 {
+    color: rgb(100, 100, 255);
+}
+div.kod-primer-unutra em.boja2 {
+    color: rgb(150, 150, 255);
+}
+div.kod-primer-unutra em.boja3 {
+    color: rgb(84, 255, 110);
+}
+div.kod-primer-unutra em.boja4 {
+    color: rgb(255, 171, 36);
+}
+div.kod-primer-unutra em.boja5 {
+    color: rgb(174, 255, 61);
+}
+div.kod-primer-unutra em.boja6 {
+    color: rgb(255, 226, 36);
+}
+div.kod-primer-unutra em.boja7 {
+    color: rgb(255, 204, 74);
+}
+div.kod-primer-unutra em.boja8 {
+    color: rgb(28, 164, 213);
+}
+
+//primer koda za u single page delu
+
+div.stranica div.stranica-naslov {
+    background-color: rgb(70, 37, 96);
+}
+
+div.stranica div.stranica-naslov h1 {
+    background-color: rgb(62, 28, 87);
+    color: whitesmoke;;
+}
+
+div.stranica div.primer {
+    background-color: rgb(51, 51, 51);
+    color: whitesmoke;
+}
+
+div.primer div.primer-unutra {
+    background-color: rgb(33, 33, 33);
+}
+
+div.stranica {
+    background-color: rgb(36, 12, 54);
+    color: whitesmoke;
+}
+
+// o nama i kontakt stranica
+
+div.o-nama-naslov, div.kontakt-naslov {
+    background-color: rgb(74, 22, 113);
+    color: whitesmoke;
+}
+
+div.o-nama-tekst, div.kontakt-forma {
+    background-color: rgb(85, 20, 135);
+    color: whitesmoke;
+}
+
+body {
+    background-color: rgb(36, 12, 54);
+}
+
+form input {
+    background-color: rgb(43, 2, 74);
+    color: whitesmoke;
+    border: none;
+}
+
+form input::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+form textarea {
+    background-color: rgb(43, 2, 74);
+    color: whitesmoke;
+    border: none;
+}
+
+form textarea::placeholder {
+    color: rgb(208, 208, 208);
+}
+//podnozje
+$podnozje-pozadina-boja: rgb(35,35,35);
+$podnozje-granica-boja: rgb(236, 236, 236);
+
+
+footer {
+    background-color: $podnozje-pozadina-boja;
+    color: $text-boja;
+    border-color: $podnozje-granica-boja;
+}
+
+button {
+    background-color: rgb(46, 22, 84);
+    color: rgb(243, 243, 243);
+}
+
+
+button:hover {
+    background-color: rgb(211, 211, 211);
+    color: rgb(46, 22, 84);
+}
+
+footer h1 {
+    color: white;
+}
+
+footer a {
+    color: rgb(231, 231, 231);
+}
+
+footer a:hover {
+    color: rgb(218, 218, 218);
+}
+
+
+
+//odeljak
+aside {
+    background-color: rgb(36, 12, 54);
+}
+
+aside button {
+    background-color: rgb(49, 25, 67);
+}
+
+aside h1 {
+    background-color: rgb(36, 16, 51);
+    color: rgb(237, 237, 237);;
+}
+
+div.pod-dugmad a {
+    color: rgb(13, 8, 74);
+    background-color: rgb(47, 28, 61);
+}
+
+div.pod-dugmad a:hover {
+    background-color: rgb(86, 57, 96);
+}
+
+//rgb(206, 206, 206);
+
+
+//megameni
+
+
+.minimeni {
+    background-color: rgb(43, 10, 61);
+}
+
+div.naslov {
+  background-color: rgb(31, 4, 45);
+  border-left: 2px solid rgb(23, 3, 34);
+  border-right: 2px solid rgb(23, 3, 34);
+}
+
+div.naslov:hover {
+    background-color: rgb(212, 212, 212);
+    color: rgb(31, 4, 45);;
+}
+
+div.menilista {
+  border: 2px solid rgb(23, 3, 34);
+}
+
+div.menilista a:hover {
+  background-color: rgb(212, 212, 212);
+  color: rgb(31, 4, 45);;
+}
+
+//burger meni
+
+img#glavni {
+    background-color: rgba(0,0,0,0.10);
+}
+
+header#burger-meni div.sadrzaj {
+    background-color:  rgba(25, 5, 35, 0.8);
+}
+
+header#burger-meni div.sadrzaj button {
+    background-color: rgba(0, 0, 0, 0.38);
+    color: white;
+}
+
+div.dugmad div.html button {
+
+    background-color:  rgba(0, 0, 0, 0.08);
+    color: white;
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.28);;
+}
+
+div.dugmad div.css button {
+
+    background-color:  rgba(0, 0, 0, 0.08);
+    color: white;
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.28);;
+}
+
+div.dugmad button a {
+    color: white;
+}
+
+
+div.dugmad div.javascript button {
+    background-color:  rgba(0, 0, 0, 0.08);
+    color: white;
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+div.dugmad div.html button:hover {
+        background-color:  rgba(0, 0, 0, 0.38);
+}
+
+div.dugmad div.css button:hover {
+        background-color:  rgba(0, 0, 0, 0.38);
+}
+
+div.dugmad div.javascript button:hover {
+        background-color:  rgba(0, 0, 0, 0.38);
+}
+
+header#burger-meni div.dugmad button:hover {
+            background-color:  rgba(0, 0, 0, 0.58);
+}
+
+h3#html-naslov, h3#css-naslov, h3#js-naslov {
+    text-shadow: 5px 3px 1px rgba(0, 0, 0, 0.28);
+}
+
+h3#html-naslov:hover {
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+h3#css-naslov:hover {
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+h3#js-naslov:hover {
+    background-color: rgba(0, 0, 0, 0.22);
+}

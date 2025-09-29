@@ -1,0 +1,59 @@
+:root {
+    --velicina-font-odeljak-dugme: 1.3em;
+    --velicina-font-odeljak-h1: 2em;
+    --velicina-font-odeljak-a: 1.3em;
+}
+
+aside {
+    top: 104px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 270px;
+    height: 85.4vh;
+    text-align: start;
+    overflow: auto;
+}
+
+aside button {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: var(--velicina-font-odeljak-dugme);
+    font-weight: 500;
+    text-indent: 1.5em;
+    letter-spacing: 1px;
+    box-sizing: content-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    border: 0;
+}
+
+aside h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-size: var(--velicina-font-odeljak-h1);
+    font-weight: 650;
+}
+
+div.pod-dugmad {
+    display: flex;
+    flex-direction: column;
+}
+
+
+div.pod-dugmad a {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: var(--velicina-font-odeljak-a);
+    font-weight: 500;
+    text-indent: 1.5em;
+    letter-spacing: 1px;
+    box-sizing: content-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    border: 0;
+}

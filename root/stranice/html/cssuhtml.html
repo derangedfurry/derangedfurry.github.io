@@ -1,0 +1,161 @@
+<div class="stranica">
+
+    <div class="stranica-naslov" id="naslov">
+        <h1>CSS u HTML-u</h1>
+    </div>
+    <div class="stranica-sadrzaj">
+
+        <h2>CSS</h2>
+        <p>CSS (Cascading Style Sheet), Pomoću CSS-a mogu se kontrolisati boja, font, veličina teksta, 
+        razmak između elemenata, kako su elementi pozicionirani i postavljeni, 
+        koje pozadinske slike ili boje pozadine treba da se koriste, 
+        različite ekrane za različite uređaje i veličine ekrana i još mnogo toga! </p>
+    
+    
+
+        <hr class="razmak"/>
+
+
+
+
+        <h2>Korišćenje CSS-a</h2>
+        <p>CSS se može dodati u HTML dokumente na 3 načina:</p>
+        <ul class="lista">
+            <li>Inline</li>
+            <li>Interni</li>
+            <li>Eksterni</li>
+        </ul>
+
+    
+
+        <hr class="razmak"/>
+
+
+
+
+        <h2>Inline CSS</h2>
+        <p>Inline CSS se koristi za primenu jedinstvenog stila na jedan HTML element.</p>
+        <br/>
+        <p>Inline CSS koristi atribut stila HTML elementa.</p>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;h1 style="color:blue;"&gt;Naslov&lt;/h1&gt;</p>
+                <p>&lt;p style="color:red;"&gt;Paragraf&lt;/p&gt;</p>
+            </div>
+        </div>
+
+        <h1 style="color:blue; padding: 0;">Naslov</h1>
+
+        <p style="color:red">Paragraf</p>
+
+    
+
+
+        <hr class="razmak"/>
+
+
+
+        <h2>Interni CSS</h2>
+        <p>Interni CSS se koristi za definisanje stila za jednu HTML stranicu.</p>
+        <p>Interni CSS je definisan u &lt;head&gt; elementu HTML stranice, unutar elementa &lt;style&gt;.</p>
+        
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <br/>
+                <p>&lt;style&gt;</p>
+                <br/>
+                <p>h1 {background-color: gray; color: white;}</p>
+                <br/>
+                <p>p {background-color: lightblue; color: purple;}</p>
+                <br/>
+                <p>&lt;/style&gt;</p>
+                <br/>
+                <p>&lt;/head&gt;</p>
+                <br/>
+                <p>&lt;body&gt;</p>
+                <br/>
+                <p>&lt;h1&gt;Naslov&lt;/h1&gt;</p>
+                <br/>
+                <p>&lt;p&gt;Paragraf&lt;/p&gt;</p>
+                <br/>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+
+        <h1 style="padding: 0; color: white; background-color: gray;">Naslov</h1>
+
+        <p style="background-color: lightblue; color: purple;">Paragraf</p>
+
+    
+
+
+        <hr class="razmak"/>
+
+
+
+        <h2>Eksterni CSS</h2>
+
+        <p>Eksterni CSS se koristi za definisanje stila za mnoge HTML stranice.</p>
+        <br/>
+        <p>Da bi se koristio eksterni CSS, dodaje je se veza do njega u &lt;head&gt; elementu svake HTML stranice.</p>
+
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <br/>
+                <p>&lt;link href="stil.css"&gt;</p>
+                <br/>
+                <p>&lt;/head&gt;</p>
+                <br/>
+                <p>&lt;body&gt;</p>
+                <br/>
+                <p>&lt;h1&gt;Naslov&lt;/h1&gt;</p>
+                <br/>
+                <p>&lt;p&gt;Paragraf&lt;/p&gt;</p>
+                <br/>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+
+        <h2>stil.css</h2>
+        <p>Eksterni CSS se može napisati u bilo kom tekst editoru. 
+            Datoteka ne sme da sadrži nikakav HTML kod i 
+            mora biti sačuvana sa ekstenzijom <b>.css</b>.</p>
+        <div class="primer">
+            <div class="primer-unutra">
+                <br/>
+                <p>h1 {<br/>background-color: lightyellow;<br/>color: green;<br/>}</p>
+                <br/>
+                <p>p {<br/>background-color: darkblue;<br/>color: white;<br/>}</p>
+                <br/>
+            </div>
+        </div>
+
+        <h1 style="padding: 0; background-color: lightyellow; color: green;">Naslov</h1>
+        <p style="background-color: darkblue; color: white;">Paragraf</p>
+
+
+
+
+
+
+
+        <div class="html-dugmad">
+            <button>HTML tekst</button>
+            <button>JavaScript u HTML-u</button>
+        </div>
+
+
+    </div>
+
+</div>

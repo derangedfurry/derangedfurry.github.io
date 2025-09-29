@@ -1,0 +1,312 @@
+:root {
+    --velicina-fonta-glavni-h1: 5.3em; 
+    --velicina-fonta-glavni-h2: 2.5em; 
+    --velicina-fonta-glavni-a: 1.7em;
+    --velicina-fonta-glavni-dugme: 1.3em;
+    --velicina-fonta-kursevi-h1: 5em;
+    --velicina-fonta-kursevi-h2: 2.5em;
+    --velicina-fonta-kursevi-p: 1.2em;
+    --velicina-fonta-kursevi-a: 5em;
+    --velicina-fonta-kursevi-dugme: 1em;
+    --velicina-fonta-o-nama-kontakt-h1: 7em;
+    --velicina-fonta-o-nama-kontakt-p: 1.5em;
+    --velicina-fonta-forma-labela: 1.2em;
+    --velicina-fonta-forma-unos: 1.15em;
+    --velicina-fonta-forma-tekst: 1.12em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+main div.dugmad {
+    padding-top: 15px;
+}
+
+main section button {
+    padding: 23px;
+    font-size: var(--velicina-fonta-glavni-dugme);
+    margin: 10px;
+    box-sizing: content-box;
+    border-radius: 15px;
+}
+
+main section.dobrodosli {
+    align-items: center;
+}
+
+main section.dobrodosli a{
+    text-decoration: underline;
+}
+
+main div.dugmad {
+    display: flex;
+}
+
+main button {
+    border: none;
+}
+
+main h1 {
+    font-size: var(--velicina-fonta-glavni-h1);
+    padding-bottom: 60px;
+}
+
+main h2 {
+    font-size: var(--velicina-fonta-glavni-h2);
+    padding-bottom: 30px;
+}
+
+main a {
+    font-size: var(--velicina-fonta-glavni-a);
+}
+
+main div.sadrzaj {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+
+div.kod-primer-spolja {
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+div.kod-primer-unutra {
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    user-select: none;
+}
+
+div.kod-primer-unutra p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+div.kod-primer-unutra em {
+    font-style: normal;
+}
+
+div.kod-primer-unutra p.tab {
+    margin-left: 20px;
+}
+
+.slike {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+.slika {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slika.slika1 {
+    background-image: url('../../slike/pozadina1.jpg');
+}
+
+.slika.slika2 {
+    background-image: url('../../slike/pozadina2.jpg');
+}
+
+.slika.slika3 {
+    background-image: url('../../slike/pozadina3.jpg');
+}
+
+.slika.aktivna {
+    opacity: 1;
+}
+
+/*Single Page deo*/
+main#main {
+    width: 100%;
+}
+
+div#glavni-div {
+    display: flex;
+    
+}
+
+div.stranica {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 10vh;
+    text-align: justify;
+}
+
+div.stranica div.stranica-naslov {
+    display: flex;
+    padding: 100px 100px 100px 100px;
+    margin-bottom: 20px;
+    justify-content: start;
+
+    border-radius: 8px;
+}
+
+
+div.stranica div.stranica-naslov h1 {
+    border-radius: 8px;
+    font-size: var(--velicina-fonta-kursevi-h1);
+    padding: 50px 50px 50px 50px;
+}
+
+div.stranica h2 {
+    font-size: var(--velicina-fonta-kursevi-h2);
+    letter-spacing: 1px;
+}
+
+div.stranica p {
+    font-size: var(--velicina-fonta-kursevi-p);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1.3px;
+}
+
+div.stranica div.primer {
+    margin-top: 10px;
+    display: flex;
+    width: max-content;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div.primer div.primer-unutra {
+    min-width: 300px;
+    max-width: 1200px;
+    padding: 5px;
+    width: max-content;
+}
+
+hr.razmak {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+div.html-dugmad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    width: 100%;
+}
+
+div.html-dugmad button {
+    padding: 20px;
+    font-size: var(--velicina-fonta-kursevi-dugme);
+    border-radius: 7px;
+}
+
+section.o-nama-telo {
+    height: 90vh;
+    display: flex;
+    padding-left: 80px;
+    padding-right: 220px;
+}
+
+div.o-nama-naslov {
+    border-radius: 7px;
+    margin-bottom: 70px;
+}
+
+div.o-nama-naslov h1 {
+    font-size: var(--velicina-fonta-o-nama-kontakt-h1);
+    text-indent: 50px;
+    padding: 0;
+}
+
+div.o-nama-tekst {
+    padding: 15px;
+    border-radius: 7px;
+}
+
+div.o-nama-tekst p {
+    text-align: justify;
+    font-size: var(--velicina-fonta-o-nama-kontakt-p);
+    letter-spacing: 0.01px;
+}
+
+section.kontakt-telo {
+    display: flex;
+    padding-left: 80px;
+    padding-right: 220px;
+    align-items: center;
+    height: auto;
+}
+
+div.kontakt-naslov {
+    border-radius: 7px;
+    margin-bottom: 70px;
+    min-width: 60vw;
+}
+
+div.kontakt-naslov h1 {
+    font-size: var(--velicina-fonta-o-nama-kontakt-h1);
+    text-indent: 50px;
+    padding: 0;
+    padding-right: 50px;
+}
+
+div.kontakt-forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    border-radius: 7px;
+    width: fit-content;
+}
+
+div.kontakt-forma form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+form label {
+    font-size: var(--velicina-fonta-forma-labela);
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+form input {
+    font-size: var(--velicina-fonta-forma-unos);
+}
+
+form textarea {
+    height: 200px;
+    font-size: var(--velicina-fonta-forma-tekst);
+}
+
+form #submit {
+    margin-top: 15px;
+}

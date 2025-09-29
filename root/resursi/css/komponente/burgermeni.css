@@ -1,0 +1,193 @@
+
+header#burger-meni {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+img#glavni {
+    top: 2px;
+    right: 2px;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 15px;
+    margin: 0;
+}
+/* dugme */
+
+.burger-slika {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.burger-slika img {
+    width: 100px;
+    height: 100px;
+}
+
+/* meni */
+div#burgermeni {
+    display: none;
+    flex-direction: column;
+}
+
+
+header#burger-meni div.sadrzaj {
+    position: fixed;
+    right:0%;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+
+header#burger-meni div.sadrzaj button {
+    font-size: 1em;
+    font-weight: 450;
+    margin-top: 3px;
+    border: none;
+}
+
+div.sadrzaj div.dugmad {
+    display: flex;
+    flex-direction: column;
+}
+
+div.dugmad div.html,div.css, div.javascript {
+    display: flex;
+    flex-direction: column;
+}
+
+div.dugmad div.html button {
+    font-size: 1em;
+    margin-top: 3px;
+    border: none;
+
+}
+
+div.dugmad button a {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.dugmad div.css button {
+    font-size: 1em;
+    margin-top: 3px;
+    border: none;
+}
+
+div.dugmad div.javascript button {
+    font-size: 1em;
+    margin-top: 3px;
+    border: none;
+}
+
+div.dugmad div.html button:hover {
+        transition: background-color 0.2s;
+}
+
+div.dugmad div.css button:hover {
+        transition: background-color 0.2s;
+}
+
+div.dugmad div.javascript button:hover {
+        transition: background-color 0.2s;
+}
+
+header#burger-meni div.dugmad button:hover {
+        transition: background-color 0.2s;
+}
+
+div.podesavanja {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.podesavanja button {
+    padding: 3px;
+}
+
+button#dugme-kursevi {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.kursevi h3 {
+    color: white;
+    font-weight: 600;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+div#kursevi {
+    position: relative;
+    display: none;
+    flex-direction: column;
+}
+
+h3#html-naslov, h3#css-naslov, h3#js-naslov {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+div#html-deo, div#css-deo, div#js-deo {
+    display: none;
+    position: relative;
+}
+
+
+@keyframes meni-levo {
+    from {
+        opacity: 0;
+        right: -200px;
+    } 
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes meni-desno  {
+    from {
+        right: 0;
+        opacity: 1;
+    } 
+    to {
+        right: -200px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes deo-levo {
+    from {
+        opacity: 0;
+        right: -200px;
+    } 
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes deo-desno  {
+    from {
+        right: 0;
+        opacity: 1;
+    } 
+    to {
+        right: -200px;
+        opacity: 0;
+        display: none;
+    }
+}

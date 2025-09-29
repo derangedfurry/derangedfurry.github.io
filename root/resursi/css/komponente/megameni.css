@@ -1,0 +1,73 @@
+:root {
+  --megameni-odstupak: 80px;
+  --velicina-font-megameni-naslov: 0.9em;
+  --velicina-font-menameni-a: 0.65em;
+}
+
+.megameni {
+    display: flex;
+    position: fixed;
+    top: -300px;
+    overflow: hidden;
+    left:50px;
+}
+
+.minimeni {
+    display: flex;
+    flex-direction: column;
+}
+
+div.naslov {
+  display: flex;
+  justify-content: center;
+}
+
+
+div.naslov h4 {
+  font-size: var(--velicina-font-megameni-naslov);
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+div.menilista {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+div.menilista a {
+  font-size: var(--velicina-font-menameni-a);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+@keyframes napred {
+    
+  from 
+  {
+    top: 100px;
+    opacity: 0%;
+    }
+    
+  to 
+  {
+    top: var(--megameni-odstupak);
+    opacity: 100%;
+  }
+
+}
+
+@keyframes nazad {
+  from 
+  { 
+    top: var(--megameni-odstupak);
+    }
+
+  to {
+    top: 100px;
+    opacity: 0%;
+    display: none;
+    }
+}
+

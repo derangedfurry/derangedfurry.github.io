@@ -1,0 +1,152 @@
+<div class="stranica">
+
+    <div class="stranica-naslov" id="naslov">
+        <h1>JavaScript petlje</h1>
+    </div>
+    <div class="stranica-sadrzaj">
+
+        <h2>Petlja</h2>
+
+        <p>Petlje su korisne ako želite da pokrećete isti kod iznova, svaki put sa drugom vrednošću.</p>
+
+        <br/>
+        <h3>umesto:</h3>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>tekst += lista_imena[0] + "&lt;br/&gt;"</p>
+                <p>tekst += lista_imena[1] + "&lt;br/&gt;"</p>
+                <p>tekst += lista_imena[2] + "&lt;br/&gt;"</p>
+                <p>tekst += lista_imena[3] + "&lt;br/&gt;"</p>
+                <p>tekst += lista_imena[4] + "&lt;br/&gt;"</p>
+                <p>tekst += lista_imena[5] + "&lt;br/&gt;"</p>
+            </div>
+        </div>
+
+        <h3>može se napisati:</h3>
+
+        
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>for (let i = 0; i < lista_imena.length; i++) {
+                <p>tekst += lista_imena[i] + "&lt;br/&gt;";</p>
+                <p>}</p>
+            </div>
+        </div>
+        
+        <p>JavaScript sadrži nekoliko petlji:</p>
+        <ul>
+            <li><p>for</p></li>
+            <li><p>while</p></li>
+            <li><p>do while</p></li>
+        </ul>
+
+
+
+
+        <hr class="razmak"/>
+
+
+        
+
+        <h2>for</h2>
+
+        <p>for petlja se satoji iz tri dela:</p>
+        <br/>
+
+        <p>for ( <b>brojač</b> ; <b>uslov</b> ; <b>korak</b> )</p>
+        <br/>
+
+        <p>brojač - se izvršava jednom pre početka for petlje.</p>
+
+        <p>uslov - proverava se uslov for petlje pri svakoj iteraciji, 
+            ako je tačan treće sledeća iteracije, ako nije, onda 
+            se prekida for petlja.
+        </p>
+
+        <p>korak - izvršava se na kraju svake iteracije, 
+            obično je to inkrementacija brojača.
+        </p>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>let suma = 0;</p>
+                <p>for (let i = 0; i < 5; i++) {</p>
+                <p>suma += i;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+
+
+
+        <hr class="razmak"/>
+
+
+
+
+        <h2>while</h2>
+
+        <p>while petlja prolazi kroz blok koda sve dok je određeni uslov tačan. </p>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>while (uslov) {</p>
+                <p> //kod koji će se izvršiti ako je uslov tačan</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>let suma = 0;</p>
+                <p>while (i < 10) {</p>
+                <p> suma += i;</p>
+                <p>i++;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+
+        <hr class="razmak"/>
+
+
+
+
+        <h2>do while</h2>
+
+        <p>do while je varijanta while petlje.</p>
+
+        <p>do while prvo izvršava blok koda onda provera uslov.</p>
+        
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>do {</p>
+                <p> //kod koji će se izvršiti</p>
+                <p>}</p>
+                <p>while (uslov);</p>
+            </div>
+        </div>
+
+        <div class="primer">
+            <div class="primer-unutra">
+                <p>let suma = 0;</p>
+                <p>let i = 1;</p>
+                <p>do {</p>
+                <p>suma += i;</p>
+                <p>i++;</p>
+                <p>}</p>
+                <p>while (i < 10);</p>
+            </div>
+        </div>
+
+
+
+        <div class="html-dugmad">
+            <button>JS if uslov</button>
+            <button>Početna</button>
+        </div>
+
+
+    </div>
+</div>
